@@ -1,76 +1,112 @@
-=== Heading ===
-Some content
-I would like to add another line
+WikiParser stress tester. <br /> Testing...
 
-== Subheading ==
-Some more content
-Some more lines1
-:A line with indent
-:: A 2-indented line
-:: more
-:back to 1-indented line
-Something here
+== Nowiki test ==
+<nowiki>1</nowiki>
+<nowiki>2</nowiki>
+<nowiki>3</nowiki>
 
-==== subsub ====
-I'm a sub of a sub
 
-=== New heading ===
+<nowiki>[[wooticles|narf]] and '''test''' and stuff.</nowiki>
 
-This is an image.
-[[File:http://lygon.net/lygonsoftware.png Lygon Software]]
-This is some more text
+== Character formatting ==
+This is ''emphasized'', this is '''really emphasized''', this is ''''grossly emphasized'''',
+This is imbalanced right ''emphasized'''
+This is imbalanced left '''emphasized''
+and this is just '''''freeking insane'''''.
+No End '''NO END
+Done.
 
-This is a link: [http://www.google.com Google blaah blaahg].
-This is a bold link: '''[http://www.google.com Google]'''.
-This is a bold-italic link: '''''[http://www.google.com Google]'''''.
-This is '''bold''', '''''bold-italic''''', and ''italic''
-This here is a link without text [http://lygon.net]
+== Variables ==
+{{CURRENTDAY}}/{{CURRENTMONTH}}/{{CURRENTYEAR}}
+Done.
 
-Some more lines1
-:A line with indent
-:: A 2-indented line
-:: more
-:back to 1-indented line
+== Image test ==
+[[:Image:bao1.jpg]]
+[[Image:bao1.jpg|frame|alternate text]]
+[[Image:bao1.jpg|right|alternate text]]
+Done.
 
-And a hr thingy here
+== Horizontal Rule ==
+Above the rule.
 ----
+Done.
 
-== Listings hiar ==
+== Hyperlink test ==
+This is a [[namespace:link target|bitchin hypalink]] to another document for [[click]]ing, with [[(some) hidden text]] and a [[namespace:hidden namespace]].
 
-# First
-# second
-## Second-First
-### third
-#### z
-#### y
-#### x
-## Second-Second [ftp://www.facebook.com Facebook FTP]
-## Second-Third [http://www.google.com Google Here] 
-# third
-### hax
-### lol
-#### omg
-# wtf
+[[simpletest This Should Be Simple?]]
 
-* apple
-* orange
-** banana
-*** cactus
-*** dolphin
-**** monkey
+A link to an external site [http://www.google.ca] as well another [http://www.esitemedia.com], and a [http://www.blitzaffe.com titled link] -- woo!
+Done.
 
-# First
-# second
-# third
-#* forth
-#* fifth
-#* sixth
-# forth
-## forth-1
-## forth-2
-### forth-2-1
-###* forth-2-1-item
-###* forth-2-1-item
-###* forth-2-1-item
-### forth-2-2
-## forth-3
+== Preformat ==
+Not preformatted.
+ Totally preformatted 01234    o o
+ Again, this is preformatted    b    <-- It's a face
+ Again, this is preformatted   ---'
+Done.
+        
+== Bullet test ==
+* One bullet
+* Another '''bullet'''
+*# a list item
+*# another list item
+*#* unordered, ordered, unordered
+*#* again
+*# back down one
+Done.
+
+== Definition list ==
+; yes : opposite of no
+; no : opposite of yes
+; maybe
+: somewhere in between yes and no
+Done.
+
+== Indent ==
+Normal
+: indented woo
+: more indentation
+Done.
+
+
+{| border="1" cellspacing="0" cellpadding="2"
+|-
+!scope="col"| Item
+! Quantity
+!scope="col"| Price
+|-
+!scope="row"| Bread
+|scope="col"| 0.3 kg
+| $0.65
+|-
+!scope="row"| Butter
+| 0.125 kg
+| $1.25
+|-
+!scope="row" colspan="2"| Total
+| $1.90
+|}
+
+
+{|
+! align="left"|Item
+! Amount
+! Cost
+|-
+|Orange
+|10
+|7.00
+|-
+|Bread
+|4
+|3.00
+|-
+|Butter
+|1
+|5.00
+|-
+!Total
+|
+|15.00
+|}
