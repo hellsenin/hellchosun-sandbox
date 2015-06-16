@@ -1,10 +1,16 @@
 WikiParser stress tester. <br /> Testing...
 
 == Nowiki test ==
+=== Nowiki test ===
+==== Nowiki test ====
+===== Nowiki test =====
 <nowiki>1</nowiki>
 <nowiki>2</nowiki>
 <nowiki>3</nowiki>
 
+== Nowiki test ==
+
+= Nowiki test =
 
 <nowiki>[[wooticles|narf]] and '''test''' and stuff.</nowiki>
 
